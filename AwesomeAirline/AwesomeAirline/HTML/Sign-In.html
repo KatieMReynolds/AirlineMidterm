@@ -24,7 +24,38 @@
     <div class="main-layout">
         <div class="header"></div>
         <div class="content">
-            THIS IS THE SIGN-IN PAGE
+                    <form class="form" name="signupForm">
+            <h1>Sign Up</h1>
+            <br />
+            <b>Enter Name:</b><br />
+            <input type="text" placeholder="First Name" name="fname" required><br />
+            <input type="text" placeholder="Last Name" name="lname" required> <br />
+            <input type="text" placeholder="suffix" name="suffix"> <br />
+
+            <b>Birthdate:</b><br />
+            <input type="date" placeholder="Date of Birth" name="bday" required><br />
+            <!--CHANGE LATER: Maybe a drop down list or check boxes for gender selection like most forms have-->
+            <input type="text" placeholder="Gender" name="gen" required> <br />
+
+            <b>Contact:</b><br />
+            <input type="number" placeholder="Phone" name="pnumber" required /><br />
+            <input type="email" placeholder="Email Address" name="emailadd" required />
+            <br />
+
+            <b>Address:</b><br />
+            <input type="text" placeholder="line 1" name="add1" required /><br />
+            <input type="text" placeholder="line 2" name="add2" /> <br />
+            <input type="text" placeholder="City" name="City" required /><br />
+            <input type="text" placeholder="ZipCode" name="zip" required /><br />
+
+            <b>Choose Username and Password</b><br />
+            <input type="text" placeholder="Username" name="userid" required /><br />
+            <input type="password" placeholder="Password" name="userpword" required />
+
+            <button type="submit" name="btnSignUp" onclick="signupFunction()">SignUp</button>
+            <button type="button" name="btnClearLogin" onclick="cancelFunction()">Cancel</button>
+
+        </form>
         </div>
         <div class="footer"></div>
     </div>
